@@ -1,6 +1,6 @@
 
 dataSource {
-    dbCreate = "create"
+    dbCreate = "update"
     url = "jdbc:postgresql://localhost:5432/forum"
     driverClassName = "org.postgresql.Driver"
     username = "postgres"
