@@ -3,12 +3,13 @@ package base
 class Topic {
 
     Long id
-    String username
+    String title
+    String content
     Date timestamp
-    String password
 
     static constraints = {
     }
 
-    static belongsTo = [topic: Topic]
+    static hasMany = [comments: Comment]
+//   static belongsTo = [author: User]
 }

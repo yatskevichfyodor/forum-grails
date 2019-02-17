@@ -7,4 +7,6 @@ class Comment {
 
     static constraints = {
     }
+
+    static belongsTo = [topic: Topic, author: User]
 }
