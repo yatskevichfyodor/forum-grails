@@ -9,12 +9,16 @@ class UrlMappings {
             }
         }
 
+        "/$controller/$id"{
+            action = [GET:"read", PUT:"update", DELETE:"delete"]
+        }
+
         "/$controller/add"{
             action = [GET:"renderForm", POST:"create"]
         }
 
-        "/$controller/$id"{
-            action = [GET:"read", PUT:"update", DELETE:"delete"]
+        "/$controller/findAll"{
+            action = [GET:"findAll"]
         }
 
         "/"(controller: 'home', action: 'index')

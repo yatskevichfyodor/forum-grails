@@ -7,10 +7,4 @@ class HomeController {
                 component: 'topics-panel'
         ])
     }
-
-    def create() {
-        render view: '/application', model: [
-                component: 'topic-add'
-        ]
-    }
 }

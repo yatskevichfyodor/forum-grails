@@ -5,7 +5,7 @@ class Topic {
     Long id
     String title
     String content
-    Date timestamp
+    Date timestamp = new Date()
 
     static constraints = {
     }

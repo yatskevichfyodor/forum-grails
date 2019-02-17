@@ -11,15 +11,13 @@ class TopicController {
     }
 
     def create() {
-        def topic = new Topic(title: params.title, content: params.content, timestamp: new Date())
-        topic.validate()
-        def result = topic.save()
-
-        topic.save(failOnError: true, flush: true)
-        println 'tmp'
-
+        new Topic(title: params.title, content: params.content).save(failOnError: true, flush: true)
         render(view: '/application', model: [
                 component: 'topics-panel'
         ])
+    }
+
+    def findAll() {
+        respond Topic.findAll()
     }
 }
