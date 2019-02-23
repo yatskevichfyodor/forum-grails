@@ -9,4 +9,5 @@
 //= require popper.min
 //= require bootstrap
 //= require knockout-3.4.2
+//= require vue
 //= require_self
