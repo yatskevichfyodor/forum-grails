@@ -1,13 +1,16 @@
 package base
 
-class Topic {
+import grails.rest.Resource
 
-    Long id
+@Resource(uri = '/topic')
+class Topic {
     String title
     String content
-    Date timestamp = new Date()
+    Date dateCreated
 
     static constraints = {
+        title blank:false
+        content blank:false
     }
 
     static hasMany = [comments: Comment]

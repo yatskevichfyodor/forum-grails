@@ -1,8 +1,6 @@
 package base
 
 class Role {
-
-    Long id
     String name
 
     static constraints = {

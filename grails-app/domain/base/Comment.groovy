@@ -1,12 +1,13 @@
 package base
 
 class Comment {
-
-    Long id
-    Date timestamp
+    String content
+    Date dateCreated
 
     static constraints = {
+        content blank:false
     }
 
-    static belongsTo = [topic: Topic, author: User]
+    static belongsTo = [topic: Topic]
+//    static belongsTo = [topic: Topic, author: User]
 }
