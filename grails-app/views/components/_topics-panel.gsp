@@ -1,4 +1,4 @@
-<div class="container mb-4 mt-4" id="topics-panel">
+<div class="container mb-4 mt-4" id="topics-panel" style="width:600px">
     <div class="mt-1 mb-3">
         <a href="/topic/add">
             <button type="button" class="btn btn-secondary">Add topic</button>
@@ -20,7 +20,7 @@
 
     $(document).ready(function () {
         $.ajax({
-            url: "/topic/findAll",
+            url: "/topic/",
             dataType: 'json',
             cache: false,
             timeout: 60000,
